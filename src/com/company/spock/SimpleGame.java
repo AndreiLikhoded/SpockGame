@@ -48,12 +48,6 @@ public class SimpleGame {
             } else if (computerMove.equals(Players.SCISSORS)) {
                 System.out.println("Rock crushes scissors. You win!");
                 userScore++;
-            } else if (computerMove.equals(Players.LIZARD)) {
-                System.out.println("Rock crushes lizard. You win!");
-                userScore++;
-            } else if (computerMove.equals(Players.SPOCK)) {
-                System.out.println("Spock vaporizes rock. You lose!");
-                computerScore++;
             }
         } else if (playerMove.equals(Players.PAPER)) {
             if (computerMove.equals(Players.ROCK)) {
@@ -62,12 +56,6 @@ public class SimpleGame {
             } else if (computerMove.equals(Players.SCISSORS)) {
                 System.out.println("Scissors cuts paper. You lose!");
                 computerScore++;
-            } else if (computerMove.equals(Players.LIZARD)) {
-                System.out.println("Lizard eats paper. You lose!");
-                computerScore++;
-            } else if (computerMove.equals(Players.SPOCK)) {
-                System.out.println("Paper disproves Spock. You win!");
-                userScore++;
             }
         } else if (playerMove.equals(Players.SCISSORS)) {
             if (computerMove.equals(Players.PAPER)) {
@@ -75,40 +63,6 @@ public class SimpleGame {
                 userScore++;
             } else if (computerMove.equals(Players.ROCK)) {
                 System.out.println("Rock crushes scissors. You lose!");
-                computerScore++;
-            } else if (computerMove.equals(Players.LIZARD)) {
-                System.out.println("Scissors decapitates lizard. You win!");
-                userScore++;
-            } else if (computerMove.equals(Players.SPOCK)) {
-                System.out.println("Spock smashes scissors. You lose!");
-                computerScore++;
-            }
-        } else if (playerMove.equals(Players.LIZARD)) {
-            if (computerMove.equals(Players.PAPER)) {
-                System.out.println("Lizard eats paper. You win!");
-                userScore++;
-            } else if (computerMove.equals(Players.ROCK)) {
-                System.out.println("Rock smashes lizard. You lose!");
-                computerScore++;
-            } else if (computerMove.equals(Players.SCISSORS)) {
-                System.out.println("Scissors decapitates lizard. You lose!");
-                computerScore++;
-            } else if (computerMove.equals(Players.SPOCK)) {
-                System.out.println("Lizard poisons Spock. You win!");
-                userScore++;
-            }
-        } else if (playerMove.equals(Players.SPOCK)) {
-            if (computerMove.equals(Players.PAPER)) {
-                System.out.println("Paper disproves Spock. You lose!");
-                computerScore++;
-            } else if (computerMove.equals(Players.ROCK)) {
-                System.out.println("Spock vaporizes Spock. You win!");
-                userScore++;
-            } else if (computerMove.equals(Players.SCISSORS)) {
-                System.out.println("Spock smashes scissors. You win!");
-                userScore++;
-            } else if (computerMove.equals(Players.LIZARD)) {
-                System.out.println("Lizard poisons Spock. You lose!");
                 computerScore++;
             }
         }
