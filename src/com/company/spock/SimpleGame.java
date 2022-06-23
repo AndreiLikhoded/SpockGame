@@ -31,9 +31,9 @@ public class SimpleGame {
                 System.out.println(ex.getMessage());
                 continue;
             }
-            if (playerMove.equals(Players.ROCK)
-                    || playerMove.equals(Players.SCISSORS)
-                    || playerMove.equals(Players.PAPER)) {
+            if (playerMove.equals(Players1.ROCK)
+                    || playerMove.equals(Players1.SCISSORS)
+                    || playerMove.equals(Players1.PAPER)) {
                 break;
             }
             System.out.println(playerMove + " is not a valid move.");
@@ -41,27 +41,27 @@ public class SimpleGame {
         System.out.println("Computer played: " + computerMove);
         if (playerMove.equals(computerMove)) {
             System.out.println("The game was a tie!");
-        } else if (playerMove.equals(Players.ROCK)) {
-            if (computerMove.equals(Players.PAPER)) {
+        } else if (playerMove.equals(Players1.ROCK)) {
+            if (computerMove.equals(Players1.PAPER)) {
                 System.out.println("Paper covers rock. You lose!");
                 computerScore++;
-            } else if (computerMove.equals(Players.SCISSORS)) {
+            } else if (computerMove.equals(Players1.SCISSORS)) {
                 System.out.println("Rock crushes scissors. You win!");
                 userScore++;
             }
-        } else if (playerMove.equals(Players.PAPER)) {
-            if (computerMove.equals(Players.ROCK)) {
+        } else if (playerMove.equals(Players1.PAPER)) {
+            if (computerMove.equals(Players1.ROCK)) {
                 System.out.println("Paper covers rock. You win!");
                 userScore++;
-            } else if (computerMove.equals(Players.SCISSORS)) {
+            } else if (computerMove.equals(Players1.SCISSORS)) {
                 System.out.println("Scissors cuts paper. You lose!");
                 computerScore++;
             }
-        } else if (playerMove.equals(Players.SCISSORS)) {
-            if (computerMove.equals(Players.PAPER)) {
+        } else if (playerMove.equals(Players1.SCISSORS)) {
+            if (computerMove.equals(Players1.PAPER)) {
                 System.out.println("Scissors cuts paper. You win!");
                 userScore++;
-            } else if (computerMove.equals(Players.ROCK)) {
+            } else if (computerMove.equals(Players1.ROCK)) {
                 System.out.println("Rock crushes scissors. You lose!");
                 computerScore++;
             }
