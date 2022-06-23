@@ -175,8 +175,14 @@ public class Game {
 
     private static void printDashes(int i) {
     }
-
     public static void chooseGame(){
-        
+        System.out.println("Choose the game what you want to play: 1 is hard, 2 is easy:");
+        Scanner scanner = new Scanner(System.in);
+        int chooseGame = scanner.nextInt();
+        if(chooseGame == 1){
+            Game.startGame();
+        } else if (chooseGame ==2){
+            SimpleGame.startSimpleGame();
+        }
     }
 }
