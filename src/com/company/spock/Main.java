@@ -8,6 +8,10 @@ public class Main {
         run();
     }
     public static void run(){
+
         Game.startGame();
+        SimpleGame.startSimpleGame();
+
+
     }
 }
